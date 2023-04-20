@@ -9,16 +9,16 @@ int main(){
     {
         for (int j = 0; j < 12; j++)
         {
-            fila[i][j] = rand()%(400000+100000)+1;
+            fila[i][j] = (rand()%40000) + 10000 + 1;
         }
     }
     for (int k = 0; k < 5; k++)
     {
-        printf("fila %d : \n", k);
+        printf("Anio %d : \n", k);
         for (int l = 0; l < 12; l++)
         {
-                
-            printf("%d \n", fila[k][l]);
+            printf("Mes: %d %d \n", l, fila[k][l]);    
+            //printf("%d \n", fila[k][l]);
         }
     }
     
